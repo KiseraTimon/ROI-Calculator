@@ -2,46 +2,53 @@
 <html>
 <head>
   <title>Energy Efficiency ROI Calculator</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h2>Energy Efficiency ROI Calculator</h2>
+  <!--Heading-->
+  <header class="header">
+    <h2>Energy Efficiency ROI Calculator</h2>
+  </header>
 
   <!--Form-->
-  <form id="roiForm">
+  <div class="form">
+    <form id="roiForm">
 
-    <!--Note-->
-    <p>Fields with asteriks (*) indicate compulsory entries</p>
+      <!--Note-->
+      <p>Fields with asteriks (*) indicate compulsory entries</p>
 
-    <!--Initial Investment-->
-    <label for="investment">Initial Investment (KES)  <span>*</span></label>
-    <input type="number" id="investment" step="0.01" required>
+      <!--Initial Investment-->
+      <label for="investment">Initial Investment (KES)  <span>*</span></label>
+      <input type="number" id="investment" step="0.01" required>
 
-    <!--Annual Energy Savings-->
-    <label for="savingsKWh">Annual Energy Savings (kWh) <span>*</span></label>
-    <input type="number" id="savingsKWh" step="0.01" required>
+      <!--Annual Energy Savings-->
+      <label for="savingsKWh">Annual Energy Savings (kWh) <span>*</span></label>
+      <input type="number" id="savingsKWh" step="0.01" required>
 
-    <!--Cost/kWh-->
-    <label for="costPerKWh">Cost per kWh (KES) <span>*</span></label>
-    <input type="number" id="costPerKWh" step="0.01" required>
+      <!--Cost/kWh-->
+      <label for="costPerKWh">Cost per kWh (KES) <span>*</span></label>
+      <input type="number" id="costPerKWh" step="0.01" required>
 
-    <!--Expected Lifespan-->
-    <label for="lifespan">Expected Lifespan (years) <span>*</span></label>
-    <input type="number" id="lifespan" required>
+      <!--Expected Lifespan-->
+      <label for="lifespan">Expected Lifespan (years) <span>*</span></label>
+      <input type="number" id="lifespan" required>
 
-    <!--Maintenance Cost-->
-    <label for="maintenance">Maintenance Costs</label>
-    <input type="number" id="maintenance" step="0.01" value="0">
+      <!--Maintenance Cost-->
+      <label for="maintenance">Maintenance Costs</label>
+      <input type="number" id="maintenance" step="0.01" value="0">
 
-    <!--Incentives-->
-    <label for="incentives">Incentives/Subsidies</label>
-    <input type="number" id="incentives" step="0.01" value="0">
+      <!--Incentives-->
+      <label for="incentives">Incentives/Subsidies</label>
+      <input type="number" id="incentives" step="0.01" value="0">
 
-    <button type="submit">Calculate ROI</button>
-  </form>
+      <button type="submit">Calculate ROI</button>
+    </form>
 
-  <div id="result"></div>
+    <!--Results Display-->
+    <div id="result"></div>
+  </div>
 
-  <script src="/main.js"></script>
+
+  <script src="assets/main.js"></script>
 </body>
 </html>
